@@ -11,19 +11,27 @@
         mijnPIDZ - DEMO | Nudging
     </title>
 
+    <!-- Import CSS and Fonts -->
     <link rel="stylesheet" href="css/app.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
 
-    <script src="/js/app.js"></script>
-    <script src="/js.ckeditor.js"></script>
-    <script src="/bundles/tetranzselect2entity/js/select2entity.js?version=v2.44.8.4"></script>
-    <script type="text/javascript" src="/js/list.js"></script>
+    <!-- Import jQuery and jQuery UI -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Import other dependencies -->
+    <script src="js/app.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/select2entity.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
 </head>
 
 <body class="h-dashboard">
     <div id="wrapper">
         <input type="checkbox" style="display: none;" id="togglingMenu" />
         <input type="checkbox" style="display: none;" id="togglingRightMenu" />
+        <!-- Start navigation html -->
         <header class="navbar">
             <div class="navbar-branding dark">
                 <div class="flip-container">
@@ -75,6 +83,7 @@
                 </li>
             </ul>
         </header>
+
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav">
@@ -140,7 +149,10 @@
 
             </div>
         </nav>
+        <!-- End Navigation html -->
+        
         <div id="page-wrapper" class="beige">
+            <!-- Start navbar footer -->
             <div class="side-menu-footer ">
                 <span>
                     <span class="bold font-size19">PIDZ Flex B.V.</span><br />
@@ -172,6 +184,7 @@
                         voorwaarden </a>
                 </span>
             </div>
+            <!-- End navbar footer -->
             <div id="right-wrapper">
                 <div id="flashbag_holder">
                 </div>
@@ -185,6 +198,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <input type="text" name="date" id="datePicker">
 
                         <div class="panel-body search">
 
