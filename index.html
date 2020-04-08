@@ -38,14 +38,12 @@
                     <div class="flipper">
                         <div class="front">
                             <a href="/">
-                                <img class="navbar-brand"
-                                    src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
+                                <img class="navbar-brand" src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
                             </a>
                         </div>
                         <div class="back">
                             <a href="/">
-                                <img class="navbar-brand"
-                                    src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
+                                <img class="navbar-brand" src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
                             </a>
                         </div>
                     </div>
@@ -57,13 +55,11 @@
                     <div class="flipper">
                         <div class="front">
                             <a href="/">
-                                <img class="navbar-brand mobile hidden-sm hidden-md hidden-lg"
-                                    src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
+                                <img class="navbar-brand mobile hidden-sm hidden-md hidden-lg" src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
                             </a>
                         </div>
                         <div class="back">
-                            <img class="navbar-brand  mobile hidden-sm hidden-md hidden-lg"
-                                src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
+                            <img class="navbar-brand  mobile hidden-sm hidden-md hidden-lg" src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/logo/logo.png" />
                         </div>
                     </div>
                 </div>
@@ -71,8 +67,7 @@
             <ul class="nav navbar-nav navbar-right col-xs-6 nopadding">
                 <li class="dropdown pull-right">
                     <label for="togglingRightMenu" class="profile-container">
-                        <img class="profilePhoto"
-                            src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/profile_thumb/watermark.png" />
+                        <img class="profilePhoto" src="https://mijnpidz-files-dev-cache.s3.eu-central-1.amazonaws.com/profile_thumb/watermark.png" />
                         <div>...</div>
                     </label>
                 </li>
@@ -150,33 +145,40 @@
             </div>
         </nav>
         <!-- End Navigation html -->
-        
+        <!-- Start page wrapper -->
         <div id="page-wrapper" class="beige">
             <!-- Start navbar footer -->
             <div class="side-menu-footer ">
                 <span>
-                    <span class="bold font-size19">PIDZ Flex B.V.</span><br />
-                    <span class="font-size12">
+                    <span class="bold font-size19">PIDZ Flex B.V.</span>
+                <br />
+                <span class="font-size12">
                         <span class="bold">
                             Adres<br />
-                        </span>
-                        Sint Philomenastraat 11<br>5622 CG Eindhoven NL<br /><br />
-                        <span class="bold">
+                        </span> Sint Philomenastraat 11
+                <br>5622 CG Eindhoven NL
+                <br />
+                <br />
+                <span class="bold">
                             Email<br />
                         </span>
-                        <a href="mailto:eindhoven@pidz.nl">eindhoven@pidz.nl</a><br /><br />
-                        <span class="bold">
+                <a href="mailto:eindhoven@pidz.nl">eindhoven@pidz.nl</a>
+                <br />
+                <br />
+                <span class="bold">
                             Telefoonnummer<br />
                         </span>
-                        <a href="tel:+31 40 287 0209">+31 40 287 0209</a>
-                    </span>
+                <a href="tel:+31 40 287 0209">+31 40 287 0209</a>
                 </span>
-                <br><br>
+                </span>
+                <br>
+                <br>
                 <span class="bold font-size12">
                     &copy; 2015-2020
                     <span class="fa-scarlet">
                         Smiling Gents
-                    </span><br />
+                    </span>
+                <br />
                 </span>
                 <span class="side-menu-footer-subheading">
                     All rights reserved | <a target="_blank"
@@ -185,10 +187,12 @@
                 </span>
             </div>
             <!-- End navbar footer -->
+            <!-- Start right wrapper -->
             <div id="right-wrapper">
                 <div id="flashbag_holder">
                 </div>
                 <div id="flashbag_holder"></div>
+                <!-- Start search form -->
                 <form name="form" method="post" id="searchForm" class="searchForm">
                     <div class="panel panel-white">
                         <div class="panel-heading">
@@ -199,116 +203,108 @@
                             </div>
                         </div>
 
-                        <input type="text" name="date" id="datePicker">
-
                         <div class="panel-body search">
-
                             <div id="header-row-0" class="row header-row ">
-                                <div class="col-md-2"><label class="control-label required"
-                                        for="form_searches_0_type">Type</label>
+                                <div class="col-md-2">
+                                    <label class="control-label required" for="form_searches_0_type">Type</label>
                                     <div>
-                                        <div class="h-select"><select id="form_searches_0_type"
-                                                name="form[searches][0][type]"
-                                                class="h-selects form-control form-control" style="display: none;">
+                                        <div class="h-select">
+                                            <select id="form_searches_0_type" name="form[searches][0][type]" class="h-selects form-control form-control" style="display: none;">
                                                 <option value="1">Incidentele</option>
                                                 <option value="2">Periode</option>
                                             </select>
-                                            <div class="btn-group"><button type="button"
-                                                    class="multiselect dropdown-toggle btn btn-default"
-                                                    data-toggle="dropdown" title="Incidentele"><span
-                                                        class="multiselect-selected-text">Incidentele</span> <b
-                                                        class="caret"></b></button>
-                                                <ul class="multiselect-container dropdown-menu"
-                                                    style="max-height: 300px; overflow: hidden auto;">
-                                                    <li class="active"><a tabindex="0"><label class="radio"><input
-                                                                    id="h-mc399807342" type="radio" value="1"><label
-                                                                    for="h-mc399807342" type="radio"></label>
-                                                                Incidentele</label></a></li>
-                                                    <li><a tabindex="0"><label class="radio"><input id="h-mc2683068348"
-                                                                    type="radio" value="2"><label for="h-mc2683068348"
-                                                                    type="radio"></label> Periode</label></a></li>
+                                            <div class="btn-group">
+                                                <button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Incidentele"><span class="multiselect-selected-text">Incidentele</span> <b class="caret"></b></button>
+                                                <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;">
+                                                    <li class="active">
+                                                        <a tabindex="0">
+                                                            <label class="radio">
+                                                                <input id="h-mc399807342" type="radio" value="1">
+                                                                <label for="h-mc399807342" type="radio"></label>
+                                                                Incidentele</label>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a tabindex="0">
+                                                            <label class="radio">
+                                                                <input id="h-mc2683068348" type="radio" value="2">
+                                                                <label for="h-mc2683068348" type="radio"></label> Periode</label>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4"><label class="control-label required"
-                                        for="form_searches_0_daterange">Datum</label>
+                                <div class="col-md-4">
+                                    <label class="control-label required" for="form_searches_0_daterange">Datum</label>
                                     <div class="h-calendar">
-                                        <div class="reportrange"><i
-                                                class="fa fa-calendar-o"></i><span>&nbsp;</span><input
-                                                id="form_searches_0_daterange" name="form[searches][0][daterange]"
-                                                required="required" double="double"
-                                                class="form-control cancelkeyeventsplease doubleDateTimePicker"
-                                                type="text" placeholder="Kies een datum"><b class="caret"></b></div>
+                                        <div class="reportrange"><i class="fa fa-calendar-o"></i><span>&nbsp;</span>
+                                            <input id="form_searches_0_daterange" name="form[searches][0][daterange]" required="required" double="double" class="form-control cancelkeyeventsplease doubleDateTimePicker" type="text" placeholder="Kies een datum"><b class="caret"></b></div>
                                     </div>
                                 </div>
-                                <div class="col-md-2"><label class="control-label required"
-                                        for="form_searches_0_department">Afdeling</label>
-                                    <div class="h-select"><select id="form_searches_0_department"
-                                            name="form[searches][0][department]" required="required"
-                                            class="searchable h-selects form-control form-control"
-                                            style="display: none;">
+                                <div class="col-md-2">
+                                    <label class="control-label required" for="form_searches_0_department">Afdeling</label>
+                                    <div class="h-select">
+                                        <select id="form_searches_0_department" name="form[searches][0][department]" required="required" class="searchable h-selects form-control form-control" style="display: none;">
                                             <option value="" selected="selected">Selecteer een optie</option>
                                             <option value="4">Department Periodical Shifts 101</option>
                                         </select>
-                                        <div class="btn-group"><button type="button"
-                                                class="multiselect dropdown-toggle btn btn-default"
-                                                data-toggle="dropdown" title="Selecteer een optie"><span
-                                                    class="multiselect-selected-text">Selecteer een optie</span> <b
-                                                    class="caret"></b></button>
-                                            <ul class="multiselect-container dropdown-menu"
-                                                style="max-height: 300px; overflow: hidden auto;">
+                                        <div class="btn-group">
+                                            <button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="Selecteer een optie"><span class="multiselect-selected-text">Selecteer een optie</span> <b class="caret"></b></button>
+                                            <ul class="multiselect-container dropdown-menu" style="max-height: 300px; overflow: hidden auto;">
                                                 <li class="multiselect-item filter" value="0">
                                                     <div class="input-group"><span class="input-group-addon"><i
-                                                                class="glyphicon glyphicon-search"></i></span><input
-                                                            class="form-control multiselect-search" type="text"
-                                                            placeholder="Search"><span class="input-group-btn"><button
+                                                                class="glyphicon glyphicon-search"></i></span>
+                                                        <input class="form-control multiselect-search" type="text" placeholder="Search"><span class="input-group-btn"><button
                                                                 class="btn btn-default multiselect-clear-filter"
                                                                 type="button"><i
                                                                     class="fa fa-times-circle"></i></button></span>
                                                     </div>
                                                 </li>
-                                                <li class="active"><a tabindex="0"><label class="radio"><input
-                                                                id="h-mc5055445511" type="radio" value=""><label
-                                                                for="h-mc5055445511" type="radio"></label> Selecteer een
-                                                            optie</label></a></li>
-                                                <li><a tabindex="0"><label class="radio"><input id="h-mc4552600230"
-                                                                type="radio" value="4"><label for="h-mc4552600230"
-                                                                type="radio"></label> Department Periodical Shifts
-                                                            101</label></a></li>
+                                                <li class="active">
+                                                    <a tabindex="0">
+                                                        <label class="radio">
+                                                            <input id="h-mc5055445511" type="radio" value="">
+                                                            <label for="h-mc5055445511" type="radio"></label> Selecteer een optie
+                                                        </label>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="0">
+                                                        <label class="radio">
+                                                            <input id="h-mc4552600230" type="radio" value="4">
+                                                            <label for="h-mc4552600230" type="radio"></label> Department Periodical Shifts 101
+                                                        </label>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2"><label class="control-label">Functies</label>
-                                    <div class="pidz-functions-widget-grp btn-group"><button type="button"
-                                            class="dropdown-toggle btn btn-default disabled"
-                                            name="form[searches][0][functions]" id="form_searches_0_functions"
-                                            data-functions="[]" data-toggle="popover" data-container="body"
-                                            data-placement="bottom" data-trigger="manual" data-animation="false"
-                                            data-html="true"
-                                            data-content="<div class='pidz-functions-widget'><div class='primary-function-box'><label class='header-label'>Functie</label><div class='radio func-radio-prototype'><input type='radio' name='primaryFunction'><label></label></div></div><div class='other-functions-box'><label class='header-label'>Alternatieve Functies</label><div class='checkbox func-checkbox-prototype'><input type='checkbox' name='otherFunction'><label></label></div></div></div>"><span>Selecteer
-                                                een optie</span><b class="caret"></b></button><input type="hidden"
-                                            id="form_searches_0_functions_primaryFunction"
-                                            name="form[searches][0][functions][primaryFunction]"
-                                            class="hidden primaryFunction"><select
-                                            name="form[searches][0][functions][otherFunctions][]" multiple=""
-                                            class="hidden functionSelect"></select></div>
+                                <div class="col-md-2">
+                                    <label class="control-label">Functies</label>
+                                    <div class="pidz-functions-widget-grp btn-group">
+                                        <button type="button" class="dropdown-toggle btn btn-default disabled" name="form[searches][0][functions]" id="form_searches_0_functions" data-functions="[]" data-toggle="popover" data-container="body" data-placement="bottom" data-trigger="manual" data-animation="false" data-html="true" data-content="<div class='pidz-functions-widget'><div class='primary-function-box'><label class='header-label'>Functie</label><div class='radio func-radio-prototype'><input type='radio' name='primaryFunction'><label></label></div></div><div class='other-functions-box'><label class='header-label'>Alternatieve Functies</label><div class='checkbox func-checkbox-prototype'><input type='checkbox' name='otherFunction'><label></label></div></div></div>"><span>Selecteer
+                                                een optie</span><b class="caret"></b></button>
+                                        <input type="hidden" id="form_searches_0_functions_primaryFunction" name="form[searches][0][functions][primaryFunction]" class="hidden primaryFunction">
+                                        <select name="form[searches][0][functions][otherFunctions][]" multiple="" class="hidden functionSelect"></select>
+                                    </div>
                                 </div>
-                                <div class="col-md-2"><label class="control-label invisible">&nbsp;</label>
+                                <div class="col-md-2">
+                                    <label class="control-label">&nbsp;</label>
                                     <div class="row">
-                                        <div class="col-md-6"><a class="btn btn-azure collapsed" role="button"
-                                                data-toggle="collapse" href="#detail-row-0" aria-expanded="false"
-                                                aria-controls="#detail-row-0">
+                                        <div class="col-md-6"><a class="btn btn-azure collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="#detail-row-0" id="detailsToggler">
                                                 Details
                                                 <span class="arrow"></span></a></div>
-                                        <div class="col-md-6 actions"><span><i id="duplicate-btn-0"
-                                                    class="fa fa-files-o"></i></span><span><i id="delete-btn-0"
-                                                    class="fa fa-times"></i></span></div>
+                                        <div class="col-md-6 actions">
+                                            <span><i id="duplicate-btn-0" class="fa fa-files-o"></i></span>
+                                            <span><i id="delete-btn-0" class="fa fa-times"></i></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Start details modal -->
                             <div id="detail-row-0" class="row details-row collapse">
                                 <div class="col-md-4 qualifications-container">
                                     <div class="row" style="display: none">
@@ -319,8 +315,7 @@
                                             <p class="bold">Kwalificatie:</p>
                                         </div>
                                     </div>
-                                    <div class="qualification-row qualification-row-prototype hidden"
-                                        style="margin-bottom:10px; display: none">
+                                    <div class="qualification-row qualification-row-prototype hidden" style="margin-bottom:10px; display: none">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="function-text-container">
@@ -329,8 +324,8 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="qualification-select-container">
-                                                    <div class="h-multipleselect"><select multiple="multiple"
-                                                            class="select-all form-control qualification-select"></select>
+                                                    <div class="h-multipleselect">
+                                                        <select multiple="multiple" class="select-all form-control qualification-select"></select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -338,173 +333,40 @@
                                     </div>
                                     <div class="qualifications-rows"></div>
                                 </div>
-                                <div class="col-md-4"><label class="control-label"
-                                        for="form_searches_0_comment">Bijzonderheden</label><textarea
-                                        id="form_searches_0_comment" name="form[searches][0][comment]" rows="5"
-                                        class="form-control"></textarea><label class="control-label"
-                                        for="form_searches_0_break">Pauze</label>
-                                    <div class="row">
-                                        <div class="col-md-6"><input type="text" id="form_searches_0_break"
-                                                name="form[searches][0][break]" class="form-control"></div>
-                                    </div>
-                                    <div class="checkbox"><input type="checkbox" id="form_searches_0_isSleep"
-                                            name="form[searches][0][isSleep]" value="1"><label
-                                            for="form_searches_0_isSleep"> Slaapdienst</label></div>
-                                </div>
                                 <div class="col-md-4">
+                                    <label class="control-label" for="form_searches_0_comment">Bijzonderheden</label>
+                                    <textarea id="form_searches_0_comment" name="form[searches][0][comment]" rows="5" class="form-control"></textarea>
+                                    <label class="control-label" for="form_searches_0_break">Pauze</label>
                                     <div class="row">
-                                        <div class="col-md-6"><label class="control-label"
-                                                for="form_searches_0_hoursPerShift" style="display: none;">Gem. uren per
-                                                dienst</label><input type="text" id="form_searches_0_hoursPerShift"
-                                                name="form[searches][0][hoursPerShift]" class="form-control"
-                                                style="display: none;"><label class="control-label"
-                                                for="form_searches_0_hoursPerWeek" style="display: none;">Gem. uren per
-                                                week</label><input type="text" id="form_searches_0_hoursPerWeek"
-                                                name="form[searches][0][hoursPerWeek]" class="form-control"
-                                                style="display: none;"></div>
                                         <div class="col-md-6">
-                                            <div id="dayPartWrapper_0" style="display: none;"><label
-                                                    class="control-label" for="form_searches_0_dayPart">Dagdelen</label>
-                                                <div class="h-multipleselect"><select id="form_searches_0_dayPart"
-                                                        name="form[searches][0][dayPart][]"
-                                                        class="select-all h-multiselects form-control form-control"
-                                                        multiple="multiple" style="display: none;">
-                                                        <option value="1">Ochtend</option>
-                                                        <option value="2">Middag</option>
-                                                        <option value="3">Avond</option>
-                                                        <option value="4">Nacht</option>
-                                                    </select>
-                                                    <div class="btn-group"><button type="button"
-                                                            class="multiselect dropdown-toggle btn btn-default"
-                                                            data-toggle="dropdown" title="Selecteer een optie "><span
-                                                                class="multiselect-selected-text">Selecteer een optie
-                                                            </span> <b class="caret"></b></button>
-                                                        <ul class="multiselect-container dropdown-menu"
-                                                            style="max-height: 300px; overflow: hidden auto;">
-                                                            <li class="multiselect-item multiselect-all"><a tabindex="0"
-                                                                    class="multiselect-all"><label
-                                                                        class="checkbox"><input type="checkbox"
-                                                                            value="multiselect-all"> Selecteer
-                                                                        alles</label></a></li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc5936316565" type="checkbox"
-                                                                            value="1"><label for="h-mc5936316565"
-                                                                            type="checkbox"></label> Ochtend</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc8605997053" type="checkbox"
-                                                                            value="2"><label for="h-mc8605997053"
-                                                                            type="checkbox"></label> Middag</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc6528061416" type="checkbox"
-                                                                            value="3"><label for="h-mc6528061416"
-                                                                            type="checkbox"></label> Avond</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc4062376797" type="checkbox"
-                                                                            value="4"><label for="h-mc4062376797"
-                                                                            type="checkbox"></label> Nacht</label></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="dayOfWeekWrapper_0" style="display: none;"><label
-                                                    class="control-label" for="form_searches_0_dayOfWeek">Dagen van de
-                                                    week</label>
-                                                <div class="h-multipleselect"><select id="form_searches_0_dayOfWeek"
-                                                        name="form[searches][0][dayOfWeek][]"
-                                                        class="select-all h-multiselects form-control form-control"
-                                                        multiple="multiple" style="display: none;">
-                                                        <option value="1">Maandag</option>
-                                                        <option value="2">Dinsdag</option>
-                                                        <option value="3">Woensdag</option>
-                                                        <option value="4">Donderdag</option>
-                                                        <option value="5">Vrijdag</option>
-                                                        <option value="6">Zaterdag</option>
-                                                        <option value="7">Zondag</option>
-                                                    </select>
-                                                    <div class="btn-group"><button type="button"
-                                                            class="multiselect dropdown-toggle btn btn-default"
-                                                            data-toggle="dropdown" title="Selecteer een optie "><span
-                                                                class="multiselect-selected-text">Selecteer een optie
-                                                            </span> <b class="caret"></b></button>
-                                                        <ul class="multiselect-container dropdown-menu"
-                                                            style="max-height: 300px; overflow: hidden auto;">
-                                                            <li class="multiselect-item multiselect-all"><a tabindex="0"
-                                                                    class="multiselect-all"><label
-                                                                        class="checkbox"><input type="checkbox"
-                                                                            value="multiselect-all"> Selecteer
-                                                                        alles</label></a></li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc6226741323" type="checkbox"
-                                                                            value="1"><label for="h-mc6226741323"
-                                                                            type="checkbox"></label> Maandag</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc4967871982" type="checkbox"
-                                                                            value="2"><label for="h-mc4967871982"
-                                                                            type="checkbox"></label> Dinsdag</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc6056270431" type="checkbox"
-                                                                            value="3"><label for="h-mc6056270431"
-                                                                            type="checkbox"></label>
-                                                                        Woensdag</label></a></li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc490513127" type="checkbox"
-                                                                            value="4"><label for="h-mc490513127"
-                                                                            type="checkbox"></label>
-                                                                        Donderdag</label></a></li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc2347465260" type="checkbox"
-                                                                            value="5"><label for="h-mc2347465260"
-                                                                            type="checkbox"></label> Vrijdag</label></a>
-                                                            </li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc9758967395" type="checkbox"
-                                                                            value="6"><label for="h-mc9758967395"
-                                                                            type="checkbox"></label>
-                                                                        Zaterdag</label></a></li>
-                                                            <li><a tabindex="0"><label class="checkbox"><input
-                                                                            id="h-mc1586011213" type="checkbox"
-                                                                            value="7"><label for="h-mc1586011213"
-                                                                            type="checkbox"></label> Zondag</label></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <input type="text" id="form_searches_0_break" name="form[searches][0][break]" class="form-control">
                                         </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="form_searches_0_isSleep" name="form[searches][0][isSleep]" value="1">
+                                        <label for="form_searches_0_isSleep"> Slaapdienst</label>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
-                                    <div><label class="control-label" id="row_info_0"></label></div>
-                                    <div><label class="control-label" id="row_info_2_0"></label></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <div id="add-new-search" class="h-add">
-                                <div class="add-wrapper">
-                                    <div class="addzone">
-                                        <div class="message" data-dz-message="">
-                                            <span>
-                                                <i class="fa fa-plus"></i>&nbsp;Opdracht toevoegen
-                                            </span>
-                                        </div>
+                                    <div>
+                                        <label class="control-label" id="row_info_0"></label>
+                                    </div>
+                                    <div>
+                                        <label class="control-label" id="row_info_2_0"></label>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Einde details modal -->
                         </div>
+                        <!-- Start result container -->
                         <div id="result-container"></div>
+                        <!-- End result container -->
                     </div>
+
                     <div class="panel panel-transparent h-button-total-group search-and-book-button">
                         <div class="panel-body">
                             <button class="btn btn-azure" type="submit">
-                                <span class="fa fa-search"></span>
-                                Zoek beschikbare ZZP&#039;ers
+                                <span class="fa fa-search"></span> Zoek beschikbare ZZP&#039;ers
                             </button>
                         </div>
                     </div>
@@ -522,16 +384,15 @@
                             </span>
                             <span class="search-and-book-animation-blocks">
                                 <span class="search-and-book-animation-block">&nbsp;</span>
-                                <span class="search-and-book-animation-block-two">&nbsp;</span>
+                            <span class="search-and-book-animation-block-two">&nbsp;</span>
                             </span>
                         </section>
                     </div>
 
-                    <input type="hidden" id="form__token" name="form[_token]"
-                        value="HZ3xuig7ayPILPn1AxyrDO2V-hzQPBse6UvJ-0OdXA0" />
+                    <input type="hidden" id="form__token" name="form[_token]" value="HZ3xuig7ayPILPn1AxyrDO2V-hzQPBse6UvJ-0OdXA0" />
                 </form>
-                <div id="search-wrapper" data-max-rates="[]"
-                    data-prototype="&lt;div id=&quot;header-row-__name__&quot; class=&quot;row header-row &quot;&gt;&lt;div class=&quot;col-md-2&quot;&gt;&lt;label class=&quot;control-label required&quot; for=&quot;form_searches___name___type&quot;&gt;Type&lt;/label&gt;&lt;div&gt;&lt;div class=&quot;h-select&quot;&gt;&lt;select id=&quot;form_searches___name___type&quot; name=&quot;form[searches][__name__][type]&quot; class=&quot;h-selects form-control form-control&quot;&gt;&lt;option value=&quot;1&quot;&gt;Incidentele&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;Periode&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;control-label required&quot; for=&quot;form_searches___name___daterange&quot;&gt;Datum&lt;/label&gt;&lt;div class=&quot;h-calendar&quot;&gt;&lt;div class=&quot;reportrange&quot;&gt;&lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;input
+                <!-- End search form -->
+                <div id="search-wrapper" data-max-rates="[]" data-prototype="&lt;div id=&quot;header-row-__name__&quot; class=&quot;row header-row &quot;&gt;&lt;div class=&quot;col-md-2&quot;&gt;&lt;label class=&quot;control-label required&quot; for=&quot;form_searches___name___type&quot;&gt;Type&lt;/label&gt;&lt;div&gt;&lt;div class=&quot;h-select&quot;&gt;&lt;select id=&quot;form_searches___name___type&quot; name=&quot;form[searches][__name__][type]&quot; class=&quot;h-selects form-control form-control&quot;&gt;&lt;option value=&quot;1&quot;&gt;Incidentele&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;Periode&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;col-md-4&quot;&gt;&lt;label class=&quot;control-label required&quot; for=&quot;form_searches___name___daterange&quot;&gt;Datum&lt;/label&gt;&lt;div class=&quot;h-calendar&quot;&gt;&lt;div class=&quot;reportrange&quot;&gt;&lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;input
                         id=&quot;form_searches___name___daterange&quot; name=&quot;form[searches][__name__][daterange]&quot; required=&quot;required&quot; double=&quot;double&quot;
                                                 class=&quot;doubleDatePicker  form-control cancelkeyeventsplease&quot;
                         type=&quot;text&quot;
@@ -567,23 +428,18 @@
                         <div class="tabs tabs-azure">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" data-name="invitable" class="tab-header invitabletab active">
-                                    <a href="#tab_invitable_dummy" aria-controls="tab_invitable_dummy" role="tab"
-                                        data-toggle="tab" aria-expanded="false">
-                                        <span class="badge scarlet"></span>
-                                        Uit te nodigen
+                                    <a href="#tab_invitable_dummy" aria-controls="tab_invitable_dummy" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <span class="badge scarlet"></span> Uit te nodigen
                                     </a>
                                 </li>
                                 <li role="presentation" data-name="bookable" class="tab-header bookabletab">
-                                    <a href="#tab_bookable_dummy" aria-controls="tab_bookable_dummy" role="tab"
-                                        data-toggle="tab" aria-expanded="false">
-                                        <span class="badge scarlet"></span>
-                                        Direct te boeken
+                                    <a href="#tab_bookable_dummy" aria-controls="tab_bookable_dummy" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <span class="badge scarlet"></span> Direct te boeken
                                     </a>
                                 </li>
                             </ul>
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane h-dashboard-tab-pane active"
-                                    xmlns="http://www.w3.org/1999/html">
+                                <div role="tabpanel" class="tab-pane h-dashboard-tab-pane active" xmlns="http://www.w3.org/1999/html">
                                     <div class="row h-zzpers-header">
                                         <div class="col-md-3">
                                             <div class="panel panel-azure">
@@ -614,14 +470,12 @@
                                         <div class="row" style="margin: 0; padding-bottom: 10px">
                                             <div class="col-lg-3">
                                                 <label for="search-worker">Zoeken</label>
-                                                <input type="text" name="search-worker"
-                                                    class="h-search form-control _search-worker" placeholder="Zoeken">
+                                                <input type="text" name="search-worker" class="h-search form-control _search-worker" placeholder="Zoeken">
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="search-already-worked">Eerder gewerkt bij/op:</label>
                                                 <div class="h-select">
-                                                    <select name="search-already-worked"
-                                                        class="h-selects _search-already-worked">
+                                                    <select name="search-already-worked" class="h-selects _search-already-worked">
                                                         <option value="null" selected>
                                                             Selecteer een optie
                                                         </option>
@@ -648,18 +502,14 @@
                                                         <div class="row function-prototype">
                                                             <div class="col-lg-6">
                                                                 <div class="checkbox no-margin">
-                                                                    <input type="checkbox" checked=""
-                                                                        class="_search-function" name="function">
+                                                                    <input type="checkbox" checked="" class="_search-function" name="function">
                                                                     <label for="function"></label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6">
                                                                 <div class="input-group">
                                                                     <span class="input-group-addon">€ </span>
-                                                                    <input type="text" name="search-max-rate"
-                                                                        data-function=""
-                                                                        class="vat form-control _search-rate-function"
-                                                                        value="">
+                                                                    <input type="text" name="search-max-rate" data-function="" class="vat form-control _search-rate-function" value="">
                                                                 </div>
                                                             </div>
                                                             <div class="clearfix" style="padding-bottom:10px;"></div>
@@ -670,8 +520,7 @@
                                             <div class="col-lg-1">
                                                 <label class="control-label invisible">&nbsp;</label>
                                                 <div>
-                                                    <a class="btn btn-azure negative _filter-all-panels"
-                                                        title="Filter toepassen op alle diensten" data-toggle="tooltip">
+                                                    <a class="btn btn-azure negative _filter-all-panels" title="Filter toepassen op alle diensten" data-toggle="tooltip">
                                                         Filter alles
                                                     </a>
                                                 </div>
@@ -679,24 +528,22 @@
                                         </div>
                                         <div class="panel panel-white freelancers-found">
                                             <form>
-                                                <table
-                                                    class="table table-striped table-bordered table-hover pidz-zzpers-table invitable">
+                                                <table class="table table-striped table-bordered table-hover pidz-zzpers-table invitable">
                                                     <colgroup>
                                                         <col width="5%">
-                                                        <col width="30%">
-                                                        <col width="15%">
-                                                        <col width="10%">
-                                                        <col width="10%">
-                                                        <col width="10%">
-                                                        <col width="10%">
-                                                        <col width="10%">
+                                                            <col width="30%">
+                                                                <col width="15%">
+                                                                    <col width="10%">
+                                                                        <col width="10%">
+                                                                            <col width="10%">
+                                                                                <col width="10%">
+                                                                                    <col width="10%">
                                                     </colgroup>
                                                     <thead>
                                                         <tr class="header-alt">
                                                             <th>
                                                                 <div class="checkbox _selectAll">
-                                                                    <input type="checkbox"
-                                                                        name="select_all_invitable" />
+                                                                    <input type="checkbox" name="select_all_invitable" />
                                                                     <label for="select_all_invitable"></label>
                                                                 </div>
                                                             </th>
@@ -741,8 +588,7 @@
                                         </div>
                                         <div class="panel panel-white no-freelancers-available hidden">
                                             <div class="panel-heading text-center">
-                                                Helaas, we hebben geen ZZP&#039;ers gevonden voor de opgegeven
-                                                zoekopdracht
+                                                Helaas, we hebben geen ZZP&#039;ers gevonden voor de opgegeven zoekopdracht
                                             </div>
                                         </div>
                                     </div>
@@ -755,8 +601,7 @@
                         <div class="panel-body terms">
                             <div class="checkbox">
                                 <input id="pidz_terms" type="checkbox">
-                                <label for="pidz_terms">Ik ga akkoord met de <a target="_blank"
-                                        href="/bundles/pidzuser/files/algemene_voorwaarden_opdrachtgevers.pdf?version=v2.44.8.4">algemene
+                                <label for="pidz_terms">Ik ga akkoord met de <a target="_blank" href="/bundles/pidzuser/files/algemene_voorwaarden_opdrachtgevers.pdf?version=v2.44.8.4">algemene
                                         voorwaarden van PIDZ.</a></label>
                             </div>
                         </div>
@@ -773,20 +618,16 @@
                         </div>
                     </div>
                 </div>
-                <div id="uploadBulkShiftsModal" class="modal fade" tabindex="-1" role="dialog"
-                    style="z-index: 15000 !important; display:none;">
+                <div id="uploadBulkShiftsModal" class="modal fade" tabindex="-1" role="dialog" style="z-index: 15000 !important; display:none;">
                     <div class="vertical-alignment">
                         <div class="modal-dialog vertical-align-center">
                             <div class="modal-content no-events">
                                 <div class="modal-body">
-                                    <div id="h-carousel-uploadBulkShiftsModal" class="carousel slide"
-                                        data-ride="carousel">
+                                    <div id="h-carousel-uploadBulkShiftsModal" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner" role="listbox">
                                             <div id="h-carousel-item0" class="item active">
                                                 <div class="panel panel-azure" style="min-height: 0px !important;">
-                                                    <form name="upload_file" method="post"
-                                                        action="/bulk-shift/56/upload-csv" id="uploadFileForm"
-                                                        class="no-ajax form-horizontal" enctype="multipart/form-data">
+                                                    <form name="upload_file" method="post" action="/bulk-shift/56/upload-csv" id="uploadFileForm" class="no-ajax form-horizontal" enctype="multipart/form-data">
                                                         <div class="panel-heading">
                                                             <a class="close" data-dismiss="modal" type="button">
                                                                 <i class="fa fa-times"></i></a>
@@ -803,39 +644,29 @@
                                                                     te importeren.
                                                                 </span>
                                                             </div>
-                                                            <div class="vich-file"><input type="file"
-                                                                    id="upload_file_bulkShiftUpload_file"
-                                                                    name="upload_file[bulkShiftUpload][file]"
-                                                                    required="required" class="btn btn-darkgrey" />
+                                                            <div class="vich-file">
+                                                                <input type="file" id="upload_file_bulkShiftUpload_file" name="upload_file[bulkShiftUpload][file]" required="required" class="btn btn-darkgrey" />
                                                             </div>
                                                         </div>
                                                         <div class="panel-body panel-white">
                                                             <div class="row">
                                                                 <div class="col-md-8">
-                                                                    <button style="float:left; margin-left: 10px;"
-                                                                        class="btn btn-darkgray" data-dismiss="modal">
+                                                                    <button style="float:left; margin-left: 10px;" class="btn btn-darkgray" data-dismiss="modal">
                                                                         Annuleren
                                                                     </button>
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <button type="submit"
-                                                                        id="upload_file_UploadFileSubmit"
-                                                                        name="upload_file[UploadFileSubmit]"
-                                                                        class="btn btn-azure btn"><i id="fa_spinner"
-                                                                            class="fa fa-fw fa-refresh fa-spin hidden"></i>Importeren
+                                                                    <button type="submit" id="upload_file_UploadFileSubmit" name="upload_file[UploadFileSubmit]" class="btn btn-azure btn"><i id="fa_spinner" class="fa fa-fw fa-refresh fa-spin hidden"></i>Importeren
                                                                     </button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <input type="hidden" id="upload_file__token"
-                                                            name="upload_file[_token]"
-                                                            value="nw9JWAUV757YpDSIf9eGvy4Kc1FPtZ0MshqYV6SQnys" />
+                                                        <input type="hidden" id="upload_file__token" name="upload_file[_token]" value="nw9JWAUV757YpDSIf9eGvy4Kc1FPtZ0MshqYV6SQnys" />
                                                     </form>
                                                 </div>
                                                 <script>
                                                 </script>
-                                                <div class="h-carousel-item-header"><b>Stap 1</b>
-                                                    -
+                                                <div class="h-carousel-item-header"><b>Stap 1</b> -
                                                 </div>
                                                 <div class="h-carousel-item-text"></div>
                                             </div>
@@ -846,54 +677,15 @@
                         </div>
                     </div>
                     <div id="h-modal-close">
-                        <button class="btn btn-azure light" data-dismiss="modal" type="button"><i
-                                class="fa fa-times"></i><span>Sluiten</span>
-                        </button>
-                    </div>
-                </div>
-                <div id="uploadBulkShiftsExampleModal" class="modal fade" tabindex="-1" role="dialog"
-                    style="z-index: 15000 !important; display:none;">
-                    <div class="vertical-alignment">
-                        <div class="modal-dialog vertical-align-center">
-                            <div class="modal-content no-events">
-                                <div class="modal-body">
-                                    <div id="h-carousel-uploadBulkShiftsExampleModal" class="carousel slide"
-                                        data-ride="carousel">
-                                        <div class="carousel-inner" role="listbox">
-                                            <div id="h-carousel-item0" class="item active">
-                                                <div class="panel panel-azure"
-                                                    style="width: 225% !important; transform: translateX(-350px) !important;">
-                                                    <div class="panel-heading">
-                                                        Voorbeeld .csv bestand
-                                                    </div>
-                                                    <div class="panel-body panel-white">
-                                                        <div>
-                                                            <br>
-                                                            <img src="/bundles/pidzuser/files/bulk_shift_import/ExampleCSVBulkShiftImport.png?version=v2.44.8.4"
-                                                                width="100%" alt="Example csv" />
-                                                            <br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="h-carousel-item-header"><b>Stap 1</b>
-                                                    -
-                                                </div>
-                                                <div class="h-carousel-item-text"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="h-modal-close">
-                        <button class="btn btn-azure light" data-dismiss="modal" type="button"><i
-                                class="fa fa-times"></i><span>Sluiten</span>
+                        <button class="btn btn-azure light" data-dismiss="modal" type="button"><i class="fa fa-times"></i><span>Sluiten</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End right wrapper -->
+    </div>
+    <!-- End page wrapper -->
     </div>
 </body>
 
