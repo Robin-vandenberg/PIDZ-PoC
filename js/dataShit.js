@@ -14,7 +14,6 @@ function callNudge() {
 // ----on complete form----
 
 function countTimeOfDay(data) {
-	console.log(data);
 	try {
 		morningCount = data.toString().match(/Morning/g).length;
 	} catch (err) {
@@ -41,22 +40,21 @@ function countTimeOfDay(data) {
 	var highestTime = Math.max(morningCount, middayCount, eveningCount, nightCount);
 		switch (highestTime) {
 			case morningCount:
-				optimalPostTime = "Morning";
+				optimalPostTime = "ochtend";
 				break;
 			case middayCount:
-				optimalPostTime = "Midday";
+				optimalPostTime = "middag";
 				break;
 			case eveningCount:
-				optimalPostTime = "Evening";
+				optimalPostTime = "avond";
 				break;
 			case nightCount:
-				optimalPostTime = "Night";
+				optimalPostTime = "nacht";
 		}
 	return optimalPostTime;
 }
 
 function CreateNudge(functie) {
-	console.log(data);
 	
 	processedData = [];
 	
@@ -188,37 +186,47 @@ function CreateNudge(functie) {
 	var highestCases = Math.max(mondayCasesTotal, tuesdayCasesTotal, wednesdayCasesTotal, thursdayCasesTotal, fridayCasesTotal, saturdayCasesTotal, sundayCasesTotal);
 		switch (highestCases) {
 			case mondayCasesTotal:
-				optimalPostDay = "Monday";
+				optimalPostDay = "maandag";
 				optimalTimeOfDay = countTimeOfDay(mondayTimeOfDay);
 				break;
 			case tuesdayCasesTotal:
-				optimalPostDay = "Tuesday";
+				optimalPostDay = "dinsdag";
 				optimalTimeOfDay = countTimeOfDay(tuesdayTimeOfDay);
 				break;
 			case wednesdayCasesTotal:
-				optimalPostDay = "Wednesday";
+				optimalPostDay = "woensdag";
 				optimalTimeOfDay = countTimeOfDay(wednesdayTimeOfDay);
 				break;
 			case thursdayCasesTotal:
-				optimalPostDay = "Thursday";
+				optimalPostDay = "donderdag";
 				optimalTimeOfDay = countTimeOfDay(thursdayTimeOfDay);
 				break;
 			case fridayCasesTotal:
-				optimalPostDay = "Friday";
+				optimalPostDay = "vrijdag";
 				optimalTimeOfDay = countTimeOfDay(fridayTimeOfDay);
 				break;
 			case saturdayCasesTotal:
-				optimalPostDay = "Saturday";
+				optimalPostDay = "zaterdag";
 				optimalTimeOfDay = countTimeOfDay(saturdayTimeOfDay);
 				break;
 			case sundayCasesTotal:
-				optimalPostDay = "Sunday";
+				optimalPostDay = "zondag";
 				optimalTimeOfDay = countTimeOfDay(sundayTimeOfDay);
 		}
 		
-	console.log([optimalPostDay, optimalTimeOfDay]);
-	
+	showNudge({functie, optimalPostDay, optimalTimeOfDay});
 }
+
+function showNudge(data) {
+	var nudge = `Wil je de dienst ${data.optimalPostDay} in de ${data.optimalTimeOfDay} uitzetten? Dan zijn zzp’ers met de functie ${data.functie} vaker online.`;
+	$( "#dialog-data" ).text(nudge);
+	$( "#dialog-message" ).dialog("open");
+}
+
+function setPublicationDate() {
+	$("#outputPubDay").text(`We publiceren deze dienst aankomende ${optimalPostDay} in de ${optimalTimeOfDay}`);
+	$("#pubDay").removeClass("hidden");
+  }
 
 /*
 doorzoek data naar form dingen:

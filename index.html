@@ -225,7 +225,8 @@
                                     <label class="control-label required" for="form_searches_0_daterange">Datum</label>
                                     <div class="h-calendar">
                                         <div class="reportrange"><i class="fa fa-calendar-o"></i><span>&nbsp;</span>
-                                            <input id="form_searches_0_daterange" name="form[searches][0][daterange]" required="required" double="double" class="form-control cancelkeyeventsplease doubleDateTimePicker" type="text" placeholder="Kies een datum"><b class="caret"></b></div>
+                                            <input id="form_searches_0_daterange" name="form[searches][0][daterange]" required="required" double="double" class="form-control cancelkeyeventsplease doubleDateTimePicker" type="text" placeholder="Kies een datum"><b class="caret"></b>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
@@ -239,8 +240,8 @@
                                 </div>
                                 <div class="col-md-2">
                                     <label class="control-label">Functies</label>
-                                    <div class="h-select">
-                                        <select id="form_searches_0_functie" required="required" class="searchable h-selects form-control form-control" onchange="callNudge();">
+                                    <div class="h-select" id="nudgeDiv">
+                                        <select id="form_searches_0_functie" required="required" class="searchable h-selects form-control form-control">
                                             <option value="" selected="selected">Selecteer een optie</option>
                                             <option value="begeleider">Begeleider</option>
                                             <option value="verzorgende A">Verzorgende A</option>
@@ -249,12 +250,17 @@
                                         </select>
                                     </div>
                                 </div>
-								<div class="col-md-2">
-									<label class="control-label required" for="form_searches_0_daterange">Publicatie datum</label>
-									<div class="h-calendar">
-										<p id="outputPubDate">bruhski</p>
-									</div>
-								</div>
+                                <!-- Start nudge Dialog -->
+                                <div id="dialog-message" title="Let op">
+                                    <p id="dialog-data"></p>
+                                  </div>
+                                <!-- End nudge Dialog -->
+								<div class="col-md-2 hidden" id="pubDay">
+                                    <label class="control-label required" for="form_searches_0_daterange">Publicatie dag</label>
+                                    <div class="h-calendar">
+                                        <p id="outputPubDay"></p>
+                                    </div>
+                                </div>
                                 <div class="col-md-2">
                                     <label class="control-label">&nbsp;</label>
                                     <div class="row">
