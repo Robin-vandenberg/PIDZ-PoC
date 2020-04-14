@@ -20612,3 +20612,7 @@ th.rotate > div > span {
     box-shadow: none;
     background-image: none
 }
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
