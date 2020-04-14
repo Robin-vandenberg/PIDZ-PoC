@@ -1,6 +1,16 @@
 /*
 check of alle form dingen ingevuld zijn
 */
+// ----check if form is complete----
+
+function callNudge() {
+  var x = document.getElementById("form_searches_0_functie");
+  functie = x.value;
+  if (functie !== "") {
+	  CreateNudge(functie);
+  }
+}
+
 // ----on complete form----
 
 function countTimeOfDay(data) {
