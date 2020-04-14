@@ -26,6 +26,9 @@
     <script src="js/ckeditor.js"></script>
     <script src="js/select2entity.js"></script>
     <script type="text/javascript" src="js/list.js"></script>
+	
+	<!-- Import data -->
+	<script src="allData.json"></script>
 </head>
 
 <body class="h-dashboard">
@@ -237,9 +240,12 @@
                                 <div class="col-md-2">
                                     <label class="control-label">Functies</label>
                                     <div class="h-select">
-                                        <select id="form_searches_0_department" name="form[searches][0][department]" required="required" class="searchable h-selects form-control form-control">
+                                        <select id="form_searches_0_functie" required="required" class="searchable h-selects form-control form-control" onchange="callNudge();">
                                             <option value="" selected="selected">Selecteer een optie</option>
-                                            <option value="">Helpende+</option>
+                                            <option value="begeleider">Begeleider</option>
+                                            <option value="verzorgende A">Verzorgende A</option>
+                                            <option value="verzorgende B">Verzorgende B</option>
+                                            <option value="verpleegkundige">Verpleegkundige</option>
                                         </select>
                                     </div>
                                 </div>
@@ -257,10 +263,6 @@
                                                 Details
                                                 <span class="arrow"></span>
                                             </a>
-                                        </div>
-                                        <div class="col-md-6 actions">
-                                            <span><i id="duplicate-btn-0" class="fa fa-files-o"></i></span>
-                                            <span><i id="delete-btn-0" class="fa fa-times"></i></span>
                                         </div>
                                     </div>
                                 </div>
@@ -354,155 +356,6 @@
                     <input type="hidden" id="form__token" name="form[_token]" value="HZ3xuig7ayPILPn1AxyrDO2V-hzQPBse6UvJ-0OdXA0" />
                 </form>
                 <!-- End search form -->
-                <!-- Start book form container -->
-                <div id="bookFormContainer">
-                    <div class="col-md-12 h-zzpers prototype-panel">
-                        <div class="tabs tabs-azure">
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" data-name="invitable" class="tab-header invitabletab active">
-                                    <a href="#tab_invitable_dummy" aria-controls="tab_invitable_dummy" role="tab" data-toggle="tab" aria-expanded="false">
-                                        <span class="badge scarlet"></span> Uit te nodigen
-                                    </a>
-                                </li>
-                                <li role="presentation" data-name="bookable" class="tab-header bookabletab">
-                                    <a href="#tab_bookable_dummy" aria-controls="tab_bookable_dummy" role="tab" data-toggle="tab" aria-expanded="false">
-                                        <span class="badge scarlet"></span> Direct te boeken
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane h-dashboard-tab-pane active" xmlns="http://www.w3.org/1999/html">
-                                    <div class="row h-zzpers-header">
-                                        <div class="col-md-3">
-                                            <div class="panel panel-azure">
-                                                <div class="panel-heading">
-                                                    Opdracht
-                                                </div>
-                                                <div class="panel-body assignment-type"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="panel panel-azure">
-                                                <div class="panel-heading">
-                                                    Afdeling
-                                                </div>
-                                                <div class="panel-body department-name"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="panel panel-azure">
-                                                <div class="panel-heading">
-                                                    Periode
-                                                </div>
-                                                <div class="panel-body period-desc"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="row" style="margin: 0; padding-bottom: 10px">
-                                            <div class="col-lg-3">
-                                                <label for="search-worker">Zoeken</label>
-                                                <input type="text" name="search-worker" class="h-search form-control _search-worker" placeholder="Zoeken">
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <label for="search-already-worked">Eerder gewerkt bij/op:</label>
-                                                <div class="h-select">
-                                                    <select name="search-already-worked" class="h-selects _search-already-worked">
-                                                        <option value="null" selected>
-                                                            Selecteer een optie
-                                                        </option>
-                                                        <option value="Afdeling">
-                                                            Afdeling
-                                                            <span id="department-dummy"></span>
-                                                        </option>
-                                                        <option value="Organisatie">
-                                                            Organisatie
-                                                            <span id="department-dummy"></span>
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 search-function-group">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <label for="search-function">Functies</label>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <label for="search-function">Max tarief</label>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="row function-prototype">
-                                                            <div class="col-lg-6">
-                                                                <div class="checkbox no-margin">
-                                                                    <input type="checkbox" checked="" class="_search-function" name="function">
-                                                                    <label for="function"></label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="input-group">
-                                                                    <span class="input-group-addon">€ </span>
-                                                                    <input type="text" name="search-max-rate" data-function="" class="vat form-control _search-rate-function" value="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="clearfix" style="padding-bottom:10px;"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <label class="control-label invisible">&nbsp;</label>
-                                                <div>
-                                                    <a class="btn btn-azure negative _filter-all-panels" title="Filter toepassen op alle diensten" data-toggle="tooltip">
-                                                        Filter alles
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-white freelancers-found">
-                                            <form>
-                                                <div class="panel-footer">
-                                                    <a class="btn btn-small btn-azure _show-more">
-                                                        Laat alle <span class="row-count"></span> ZZP'ers zien
-                                                    </a>
-                                                    <a class="btn btn-small btn-azure _show-less hidden">
-                                                        Laat minder ZZP&#039;ers zien
-                                                    </a>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="panel panel-white no-freelancers-available hidden">
-                                            <div class="panel-heading text-center">
-                                                Helaas, we hebben geen ZZP&#039;ers gevonden voor de opgegeven zoekopdracht
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row zzp-panels"></div>
-                    <div class="panel panel-transparent" id="terms_container" style="display: none;">
-                        <div class="panel-body terms">
-                            <div class="checkbox">
-                                <input id="pidz_terms" type="checkbox">
-                                <label for="pidz_terms">Ik ga akkoord met de <a target="_blank" href="/bundles/pidzuser/files/algemene_voorwaarden_opdrachtgevers.pdf?version=v2.44.8.4">algemene
-                                        voorwaarden van PIDZ.</a></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row h-button-total-group _invite-button-group">
-                        <div class="panel panel-transparent">
-                            <div class="panel-body">
-                                <button class="btn btn-azure hidden _invite">
-                                    <span class="fa fa-book"></span>
-                                    <span id="book_text">ZZP'ers boeken</span>
-                                    <span id="fa_spinner" class="fa fa-refresh fa-spin hidden"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End bookform container -->
             </div>
             <!-- End right wrapper -->
         </div>
