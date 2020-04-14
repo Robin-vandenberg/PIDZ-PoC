@@ -1,14 +1,8 @@
 // On window Load
 $(()=>{
     console.log( "Document loaded" );
-
-	$( function() {
-		$( "#form_searches_0_type" ).selectmenu();
-		$( "#form_searches_0_department" ).selectmenu();
-		$( "#form_searches_0_functie" ).selectmenu();
-	} );
-	
-	$( "#form_searches_0_functie" ).on( "selectmenuchange", ( event, ui ) => { callNudge(); });
+   
+    document.getElementById("form_searches_0_functie").addEventListener("change", callNudge);
 	
     // Init datepicker
     $( "#form_searches_0_daterange").datepicker();
@@ -22,7 +16,7 @@ $(()=>{
 
     //Init Nudge modal
     $( "#dialog-message" ).dialog({
-        autoOpen: true,
+        autoOpen: false,
         modal: false,
         position: { my: "left top", at: "left bottom", of: '#nudgeDiv' },
         resizable: false,
@@ -38,10 +32,4 @@ $(()=>{
           }
         }
       });
-
-    //! Test loading data | This is a development function and needs to be removed in production
-    CreateNudge('verpleegkundige');
 })
-
-function setPublicationDate() {
-}

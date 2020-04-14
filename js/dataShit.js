@@ -220,8 +220,13 @@ function CreateNudge(functie) {
 function showNudge(data) {
 	var nudge = `Wil je de dienst ${data.optimalPostDay} in de ${data.optimalTimeOfDay} uitzetten? Dan zijn zzp’ers met de functie ${data.functie} vaker online.`;
 	$( "#dialog-data" ).text(nudge);
-	$( "#dialog-message" ).dialog("show");
+	$( "#dialog-message" ).dialog("open");
 }
+
+function setPublicationDate() {
+	$("#outputPubDay").text(`We publiceren deze dienst aankomende ${optimalPostDay} in de ${optimalTimeOfDay}`);
+	$("#pubDay").removeClass("hidden");
+  }
 
 /*
 doorzoek data naar form dingen:
