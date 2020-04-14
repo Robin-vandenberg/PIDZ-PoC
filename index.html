@@ -26,6 +26,9 @@
     <script src="js/ckeditor.js"></script>
     <script src="js/select2entity.js"></script>
     <script type="text/javascript" src="js/list.js"></script>
+
+    <!-- Import data JSON -->
+    <script src="allData.json"></script>
 </head>
 
 <body class="h-dashboard">
@@ -222,7 +225,8 @@
                                     <label class="control-label required" for="form_searches_0_daterange">Datum</label>
                                     <div class="h-calendar">
                                         <div class="reportrange"><i class="fa fa-calendar-o"></i><span>&nbsp;</span>
-                                            <input id="form_searches_0_daterange" name="form[searches][0][daterange]" required="required" double="double" class="form-control cancelkeyeventsplease doubleDateTimePicker" type="text" placeholder="Kies een datum"><b class="caret"></b></div>
+                                            <input id="form_searches_0_daterange" name="form[searches][0][daterange]" required="required" double="double" class="form-control cancelkeyeventsplease doubleDateTimePicker" type="text" placeholder="Kies een datum"><b class="caret"></b>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
@@ -236,17 +240,24 @@
                                 </div>
                                 <div class="col-md-2">
                                     <label class="control-label">Functies</label>
-                                    <div class="h-select">
+                                    <div class="h-select" id="nudgeDiv">
                                         <select id="form_searches_0_department" name="form[searches][0][department]" required="required" class="searchable h-selects form-control form-control">
                                             <option value="" selected="selected">Selecteer een optie</option>
                                             <option value="">Helpende+</option>
                                         </select>
                                     </div>
                                 </div>
-								<div class="col-md-2">
-									<label class="control-label required" for="form_searches_0_daterange">Publicatie datum</label>
+                                <!-- Start nudge Dialog -->
+                                <div id="dialog-message" title="Let op">
+                                    <p id="dialog-data"></p>
+                                  </div>
+                                <!-- End nudge Dialog -->
+								<div class="col-md-2 hidden">
+									<label class="control-label required" for="form_searches_1_daterange">Publicatie datum</label>
 									<div class="h-calendar">
-										<p id="outputPubDate">bruhski</p>
+                                        <div class="reportrange"><i class="fa fa-calendar-o"></i><span>&nbsp;</span>
+                                            <input id="form_searches_1_daterange" class="form-control" type="text"><b class="caret"></b>
+                                        </div>
 									</div>
 								</div>
                                 <div class="col-md-2">
