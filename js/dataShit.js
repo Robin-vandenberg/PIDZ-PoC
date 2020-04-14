@@ -61,7 +61,6 @@ function CreateNudge(functie) {
 	currentHighest = 0;
 	returnData = [];
 	for (const singleDate of data.allDates) {
-		console.log(singleDate);
 		var morning = 0;
 		var midday = 0;
 		var evening = 0;
@@ -108,7 +107,6 @@ function CreateNudge(functie) {
 		}
 		
 		var highestTime = Math.max(morning, midday, evening, night);
-		console.log(highestTime);
 		switch (highestTime) {
 			case morning:
 				optimalPostTime = "Morning";
@@ -121,13 +119,7 @@ function CreateNudge(functie) {
 				break;
 			case night:
 				optimalPostTime = "Night";
-		}
-		
-		console.log("morning: " + morning.toString());
-		console.log("midday: " + midday.toString());
-		console.log("evening: " + evening.toString());
-		console.log("night: " + night.toString());
-		
+		}		
 		var currentDate = new Date(singleDate.date);
 		processedData.push([timeslots.length, currentDate.toLocaleDateString('en-US', {weekday: 'long'}), optimalPostTime]);
 	}
