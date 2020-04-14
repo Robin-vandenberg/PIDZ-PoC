@@ -226,8 +226,13 @@ function showNudge(data) {
 function setPublicationDate() {
 	$("#outputPubDay").text(`We publiceren deze dienst aankomende ${optimalPostDay} in de ${optimalTimeOfDay}`);
 	$("#pubDay").removeClass("hidden");
+	$("#zoek-btn").text('Dienst inplannen');
   }
 
+function removePublicationDate() {
+	$("#pubDay").addClass("hidden");
+	$("#zoek-btn").text("Zoek beschikbare ZZP'ers");
+}
 /*
 doorzoek data naar form dingen:
 

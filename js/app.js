@@ -25,6 +25,7 @@ $(()=>{
         buttons: {
           Nee: function() {
             $( this ).dialog( "close" );
+            removePublicationDate();
           },
           Ja: function() {
             $( this ).dialog( "close" );
